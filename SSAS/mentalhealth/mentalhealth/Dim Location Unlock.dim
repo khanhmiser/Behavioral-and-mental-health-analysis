@@ -1,0 +1,294 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2828d26b-4f41-4776-bb6c-6ebca0b05fa2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Location Unlock</ID>
+  <Name>Dim Location Unlock</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3261" scrolltop="-4300" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30215" y="13600" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLocationUnlock" left="-2572" top="-3731" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5239" height="8599" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00007714000097210000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLocationUnlock" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3261</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4300</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2572</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3731</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="18873a14-5979-45f8-a1be-64f9dd591f56">
+    <DataSourceViewID>Mental Health DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="aa2c8272-f147-44ba-a782-7c39452f2652">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="eb5c3a93-96f8-4c97-b794-699bfeb944dc">
+      <ID>Location Unlock ID</ID>
+      <Name>Location Unlock ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="302b8540-6b4a-43a7-8522-007145f0a64e">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d289ee8e-e303-4860-9b68-283089bcd077">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>LocationUnlockID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ac658e94-945d-400d-89f3-641bb2a6ce0c">
+          <AttributeID>Loc Home Unlock Duration Avg</AttributeID>
+          <Name>Loc Home Unlock Duration Avg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eb9fefba-d783-43be-a945-a6c1da2b5903">
+          <AttributeID>Loc Home Unlock Num</AttributeID>
+          <Name>Loc Home Unlock Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="57774917-1ed0-4f41-a3ba-fabfacb0db10">
+          <AttributeID>Loc Home Dur</AttributeID>
+          <Name>Loc Home Dur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="030432b2-6005-47aa-a6c3-728afd02127b">
+          <AttributeID>Loc Leisure Dur</AttributeID>
+          <Name>Loc Leisure Dur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="537a14a0-0821-4dbb-a9a9-42aa12635ac6">
+          <AttributeID>Loc Social Dur</AttributeID>
+          <Name>Loc Social Dur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="64ff9860-8acc-4017-978a-90fbeaa73601">
+          <AttributeID>Loc Study Dur</AttributeID>
+          <Name>Loc Study Dur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24751c3f-724e-432f-9b7d-b6450287caa0">
+          <AttributeID>Loc Workout Dur</AttributeID>
+          <Name>Loc Workout Dur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80849265-eefd-409d-b7ff-c3e15473e34a">
+          <AttributeID>Loc Worship Dur</AttributeID>
+          <Name>Loc Worship Dur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3863d4a1-d815-4175-aca3-aaf368a82768">
+          <AttributeID>Unlock Duration Ep Avg</AttributeID>
+          <Name>Unlock Duration Ep Avg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="20f22288-e4ba-4ee4-bbd5-dc00b4aa797c">
+          <AttributeID>Unlock Num Ep Avg</AttributeID>
+          <Name>Unlock Num Ep Avg</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0ec47e4-acdc-4466-b888-3ef4d0033b7d">
+      <ID>Loc Home Unlock Duration Avg</ID>
+      <Name>Loc Home Unlock Duration Avg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="22e387d5-abf8-4752-9050-dae6eeff0c62">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34c5bba5-0a4c-4fbc-bb67-892738bbeea4">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_home_unlock_duration_avg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e3d5f10-e9f7-4f02-bd56-91372ca3ef38">
+      <ID>Loc Home Unlock Num</ID>
+      <Name>Loc Home Unlock Num</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f0a2dcf9-8cb4-4340-b303-a5b707b8f0ee">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1edcfb08-aba7-4530-9bd5-158eb8676ca0">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_home_unlock_num</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a80a6c76-603c-48b7-b90d-0ce1bd41bb7b">
+      <ID>Loc Home Dur</ID>
+      <Name>Loc Home Dur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e53cf9b6-44f6-4974-a992-62a2d2922d4a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="70f948c7-83e8-4436-bfdc-5b5878dca991">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_home_dur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fbecf274-00c7-4fe8-8e35-a6fda4f2bf80">
+      <ID>Loc Leisure Dur</ID>
+      <Name>Loc Leisure Dur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="39a798fc-8081-4fd5-a427-b58728286179">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="70127217-9e0f-45d8-8674-447bfefe297c">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_leisure_dur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="646cdae0-038e-4a7e-8671-eef671d88583">
+      <ID>Loc Social Dur</ID>
+      <Name>Loc Social Dur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29312fb6-4f2a-463b-8c1e-cfdf25519426">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0dd57bcf-5d2a-4c4f-9a75-a89203447631">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_social_dur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="183b8dfa-8011-445c-a901-a800c0fc68e7">
+      <ID>Loc Study Dur</ID>
+      <Name>Loc Study Dur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fcdae62e-1261-416f-87cf-404539ea4807">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="89d5b5f3-e8eb-4772-9806-658ae51de9e2">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_study_dur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2be9905d-f0c7-4568-bbfb-dc597ce7dd3a">
+      <ID>Loc Workout Dur</ID>
+      <Name>Loc Workout Dur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b439fcc9-c604-4e34-bd01-e5153740cbdb">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8917e33-1006-4218-84b4-107fe0ce85d3">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_workout_dur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="acf8bbcb-5df5-4f55-9936-e748b1d0e7a6">
+      <ID>Loc Worship Dur</ID>
+      <Name>Loc Worship Dur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b746222-67c6-4851-9e58-8253197994b5">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39873490-bc31-4865-8310-3699e19fe9c6">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>loc_worship_dur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2f01d7bf-9ed1-48ec-bf4d-b40d7f4f96ab">
+      <ID>Unlock Duration Ep Avg</ID>
+      <Name>Unlock Duration Ep Avg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f195330e-7cc0-4245-a047-ef6cfdf41388">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee8d1fcc-6aec-4fa4-928e-ab2d5e78f02e">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>unlock_duration_ep_avg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eeb7acf5-e5c7-450d-9038-8953f9bcb214">
+      <ID>Unlock Num Ep Avg</ID>
+      <Name>Unlock Num Ep Avg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d4d26821-e39c-4dbc-a5c5-4b9e42ea95d2">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="02cb6fbd-0a68-4cc4-b491-c56ce3f8f05c">
+            <TableID>dbo_DimLocationUnlock</TableID>
+            <ColumnID>unlock_num_ep_avg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

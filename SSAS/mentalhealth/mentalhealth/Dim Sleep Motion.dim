@@ -1,0 +1,277 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="efe4c1ef-465c-41a5-900c-da5a72c03ce2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Sleep Motion</ID>
+  <Name>Dim Sleep Motion</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3803" scrolltop="-4300" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33840" y="13600" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimSleepMotion" left="-2890" top="-3572" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4154" height="5926" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003a10000026170000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimSleepMotion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3803</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4300</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2890</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3572</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0f392396-355c-48df-9a71-191a74051958">
+    <DataSourceViewID>Mental Health DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="460d1eb6-9de6-4efb-a429-58fa4951979f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="cf2f4323-0136-4008-8f1e-d435d4600447">
+      <ID>Sleep Motion ID</ID>
+      <Name>Sleep Motion ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f34bc853-c071-4358-af01-4ecaec7dd7a5">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b980b5d7-8aa3-4ae5-a324-e8f4d7b2faf5">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>SleepMotionID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="67a9762a-1bba-4ef3-8e37-2d1597e69e10">
+          <AttributeID>Sleep Duration</AttributeID>
+          <Name>Sleep Duration</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c34d3125-2f21-43d6-9020-97967ec81b4b">
+          <AttributeID>Sleep Start</AttributeID>
+          <Name>Sleep Start</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="691ea6c1-35f1-48ac-ac4e-05889a11aeba">
+          <AttributeID>Sleep End</AttributeID>
+          <Name>Sleep End</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee0202bd-93c7-46fb-8c9d-aac679abe795">
+          <AttributeID>Sleep Start Time</AttributeID>
+          <Name>Sleep Start Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="18a65e5f-95f1-4288-9955-ea1df00b231c">
+          <AttributeID>Sleep End Time</AttributeID>
+          <Name>Sleep End Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d4422e1c-d135-4ac2-8242-e906b3f92921">
+          <AttributeID>Act In Vehicle Ep Avg</AttributeID>
+          <Name>Act In Vehicle Ep Avg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f458e46c-7a6e-45a7-ad9a-5affabcbca57">
+          <AttributeID>Act On Foot Ep Avg</AttributeID>
+          <Name>Act On Foot Ep Avg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3bb33217-8850-42df-93d9-9363a4c732b0">
+          <AttributeID>Act Still Ep Avg</AttributeID>
+          <Name>Act Still Ep Avg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aab0bbda-9e16-43f0-bed1-4952dd4ae9d0">
+          <AttributeID>Loc Dist Ep Avg</AttributeID>
+          <Name>Loc Dist Ep Avg</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1330fc9a-c1a6-43e3-9e1e-86a732a4eb8e">
+      <ID>Sleep Duration</ID>
+      <Name>Sleep Duration</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4dbb9b2a-4403-46a1-8b37-2874f3b7bd0f">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d8f5d9b-e0f7-431a-b199-c4373ba5c8c6">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>sleep_duration</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="38a256e9-20e0-4a3c-bba6-0fe55502ed51">
+      <ID>Sleep Start</ID>
+      <Name>Sleep Start</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3806e95-4014-43a3-80ee-c90e50d02ecb">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c641865-10d4-4664-8d82-34839f6e52a0">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>sleep_start</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6506645f-7b86-42ae-aaa5-fadb2f46c1f1">
+      <ID>Sleep End</ID>
+      <Name>Sleep End</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="985d6eb6-fca8-4476-814c-c414cf03942d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74a48629-413e-4020-9cd3-9bc5a9949a82">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>sleep_end</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a1e7ba67-bac5-4e21-a39d-f6c55fb2a1f5">
+      <ID>Sleep Start Time</ID>
+      <Name>Sleep Start Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d8c4406-f442-4445-a30f-dad28b8a1440">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="631e7711-c574-4a80-96b9-68529a3ec61b">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>sleep_start_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="efff00e3-e762-4f6d-b312-bf5b7971f03a">
+      <ID>Sleep End Time</ID>
+      <Name>Sleep End Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e6af2d40-9416-4fc0-b21c-022a22e6a4ab">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e103e563-8677-4415-8f02-b9d24bb18ab1">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>sleep_end_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="80119181-e5bd-460a-98ee-f1a5b2148d8a">
+      <ID>Act In Vehicle Ep Avg</ID>
+      <Name>Act In Vehicle Ep Avg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1afa81e-3784-4e27-9704-e6c1b952841d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4473c5c9-7f20-4465-b213-ac12faf4d345">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>act_in_vehicle_ep_avg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="46a13b79-f6f0-42f8-b836-07961959bc19">
+      <ID>Act On Foot Ep Avg</ID>
+      <Name>Act On Foot Ep Avg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba43f2ae-000c-43bd-880a-8c18228029cb">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="139bec47-b837-48c6-b20b-f6dcccd8a337">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>act_on_foot_ep_avg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a8bc15a-c31a-4b48-9a42-c09651b0120c">
+      <ID>Act Still Ep Avg</ID>
+      <Name>Act Still Ep Avg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="711fddc9-bf6e-4f5e-ac30-d53db5a1cbdb">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="422cd0a9-ee39-4f11-91ea-5fc8c0787997">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>act_still_ep_avg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54fc38fd-0509-4785-9aad-ed8803b33cf9">
+      <ID>Loc Dist Ep Avg</ID>
+      <Name>Loc Dist Ep Avg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6db10f68-f279-40ad-8e22-79542aa215ee">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="258ba462-cc68-4370-9c34-d4b6a8a9deb1">
+            <TableID>dbo_DimSleepMotion</TableID>
+            <ColumnID>loc_dist_ep_avg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

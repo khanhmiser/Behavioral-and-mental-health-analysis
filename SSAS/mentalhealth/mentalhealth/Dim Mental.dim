@@ -1,0 +1,292 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3d3d3290-6526-4c42-874f-571c8c77f5b5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Mental</ID>
+  <Name>Dim Mental</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4380" scrolltop="-4300" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33496" y="13600" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimMental" left="-2441" top="-3969" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="7567" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00008f1d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimMental" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4380</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4300</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2441</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3969</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="72129c2c-5301-43ed-bbc2-3df2ab55c669">
+    <DataSourceViewID>Mental Health DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="f843144d-6d5c-4915-867c-8767efb8d959">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b8e536eb-365c-4e1b-995b-6f02a62f75ac">
+      <ID>Mental ID</ID>
+      <Name>Mental ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="83059e51-ee5a-4e9c-b83e-7d48904e2c8c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d83fc30-f866-43d0-aabf-b7416b0e97da">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>MentalID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="158b6f73-4f2d-4190-a680-602478e74b7b">
+          <AttributeID>Phq4 1</AttributeID>
+          <Name>Phq4 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="54e52bb7-13c8-4a55-a43d-8cfaac8e9fd9">
+          <AttributeID>Phq4 2</AttributeID>
+          <Name>Phq4 2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7894a0b5-7d8a-4bac-876a-330565ff18c4">
+          <AttributeID>Phq4 3</AttributeID>
+          <Name>Phq4 3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f9eb2e5e-fcf8-4f4b-a3d0-6e7022937baf">
+          <AttributeID>Phq4 4</AttributeID>
+          <Name>Phq4 4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ef6510dd-8a37-4dcb-808c-1858a2da0e91">
+          <AttributeID>Social Level</AttributeID>
+          <Name>Social Level</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b13f67f-3999-4d79-960f-185c7eb4d3ed">
+          <AttributeID>Sse3 1</AttributeID>
+          <Name>Sse3 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d2e5f9d5-b463-4ca6-ae61-bcb03cf89d0e">
+          <AttributeID>Sse3 2</AttributeID>
+          <Name>Sse3 2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f75d4c5-0dd4-4989-83fb-9f6f2dec6e8e">
+          <AttributeID>Sse3 3</AttributeID>
+          <Name>Sse3 3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9f2e0e5b-f588-41d8-b419-3988b6c430ec">
+          <AttributeID>Sse3 4</AttributeID>
+          <Name>Sse3 4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7ef1f90b-f60e-4a84-bdff-e04d54dee108">
+          <AttributeID>Stress</AttributeID>
+          <Name>Stress</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="19e57bf8-f05b-41b2-80e8-79e02904064b">
+      <ID>Phq4 1</ID>
+      <Name>Phq4 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e58da787-ae83-4c23-a1d0-8241cf33c466">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c58185ce-18fe-4029-8d90-9aaf7c776870">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>phq4_1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4837ef03-c86a-4798-b36e-ce67d12cd84d">
+      <ID>Phq4 2</ID>
+      <Name>Phq4 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75e097c6-6b5c-4575-9ecd-d545192d933c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3879d6d-511b-4d9a-a889-109e08edcd9e">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>phq4_2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e44e2c9c-7416-4ba0-95b3-6adb535cc63c">
+      <ID>Phq4 3</ID>
+      <Name>Phq4 3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bd65e119-db8b-4a13-ac8b-744ed6500211">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32f2438a-a8d8-4ac5-a51e-7d5365385e32">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>phq4_3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f5d5afba-dc47-411b-9904-2a96085c338a">
+      <ID>Phq4 4</ID>
+      <Name>Phq4 4</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b7c596d-42b0-486a-a73c-336446a0556e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37b5a6a5-9cb6-4b0b-8e5c-bb84b21e5cd9">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>phq4_4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="616fa147-60fc-4a41-ae0d-8904378355b2">
+      <ID>Social Level</ID>
+      <Name>Social Level</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bb459106-99b4-445b-9f26-abf0e9fc6870">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="220ffb9f-bb93-479a-bf2a-7327bb1406d8">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>social_level</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="48f76b29-5139-410e-b96c-70e315830224">
+      <ID>Sse3 1</ID>
+      <Name>Sse3 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cbf84ece-cc8e-4efb-a144-c31ba4e0923c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13e5f7b5-8bde-42b5-914d-000b699d4d94">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>sse3_1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e23c2456-1e42-4a33-800f-11276d0c8d7c">
+      <ID>Sse3 2</ID>
+      <Name>Sse3 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="202740b2-65d7-44fb-b994-ff2493987fc1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="faacebd3-4687-4f3b-b0fe-4e2bcd421a14">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>sse3_2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7da52ddd-2d32-4487-8140-5a91b96ddcb2">
+      <ID>Sse3 3</ID>
+      <Name>Sse3 3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43eceaea-3df7-4e9d-90ef-e96fbd04b7f0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f18db6e-5b0b-4c6b-b076-69695bd72f56">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>sse3_3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f361c49c-9d73-4203-88dd-cfe50d1301aa">
+      <ID>Sse3 4</ID>
+      <Name>Sse3 4</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="77ce4fd0-3617-4614-8540-72c340e97c8a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad6a6d75-13c4-4356-aff2-8011f4c839d7">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>sse3_4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="652e7c35-bb39-4c36-99a9-240dbe590ed4">
+      <ID>Stress</ID>
+      <Name>Stress</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7cdfb54-035a-497e-86be-d7cce268f568">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85a4108f-f056-43b1-8aa2-52e3a28fcc48">
+            <TableID>dbo_DimMental</TableID>
+            <ColumnID>stress</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

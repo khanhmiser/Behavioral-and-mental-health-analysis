@@ -1,0 +1,48 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UTH\\kho d\u1EEF li\u1EC7u v\u00E0 h\u1EC7 th\u1ED1ng h\u1ED7 tr\u1EE3 ra quy\u1EBFt \u0111\u1ECBnh\\project\\SSAS\\mentalhealth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A7EF725-8B52-4DE6-ACB2-6D7D7015C401}|mentalhealth\\mentalhealth.dwproj|D:\\UTH\\kho d\u1EEF li\u1EC7u v\u00E0 h\u1EC7 th\u1ED1ng h\u1ED7 tr\u1EE3 ra quy\u1EBFt \u0111\u1ECBnh\\project\\SSAS\\mentalhealth\\mentalhealth\\Mental Health DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{5A7EF725-8B52-4DE6-ACB2-6D7D7015C401}|mentalhealth\\mentalhealth.dwproj|solutionrelative:mentalhealth\\Mental Health DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7cc9e714-2774-4fc6-8631-a07eee703286}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mental Health DW.cube [Design]",
+              "DocumentMoniker": "D:\\UTH\\kho d\u1EEF li\u1EC7u v\u00E0 h\u1EC7 th\u1ED1ng h\u1ED7 tr\u1EE3 ra quy\u1EBFt \u0111\u1ECBnh\\project\\SSAS\\mentalhealth\\mentalhealth\\Mental Health DW.cube",
+              "RelativeDocumentMoniker": "mentalhealth\\Mental Health DW.cube",
+              "ToolTip": "D:\\UTH\\kho d\u1EEF li\u1EC7u v\u00E0 h\u1EC7 th\u1ED1ng h\u1ED7 tr\u1EE3 ra quy\u1EBFt \u0111\u1ECBnh\\project\\SSAS\\mentalhealth\\mentalhealth\\Mental Health DW.cube [Design]",
+              "RelativeToolTip": "mentalhealth\\Mental Health DW.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-10T16:06:29.973Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

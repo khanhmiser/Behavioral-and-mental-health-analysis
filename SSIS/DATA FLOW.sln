@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "DATA FLOW", "DATA FLOW\DATA FLOW.dtproj", "{C1C5E9FF-7870-4447-9115-E3E3B739D856}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1C5E9FF-7870-4447-9115-E3E3B739D856}.Development|Default.ActiveCfg = Development
+		{C1C5E9FF-7870-4447-9115-E3E3B739D856}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E523D46-BBFF-4CD6-AF99-B69C0679088E}
+	EndGlobalSection
+EndGlobal
