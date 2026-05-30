@@ -14,15 +14,7 @@ Dự án này xây dựng một hệ thống **Data Warehouse & Business Intelli
 - Hành vi sử dụng điện thoại
 - Môi trường âm thanh xung quanh
 
-Hệ thống được phát triển theo mô hình Business Intelligence hoàn chỉnh, bao gồm:
-
-- Data Warehouse
-- ETL Pipeline
-- OLAP Cube
-- Dashboard & Reporting
-- Decision Support Analytics
-
-## Bài toán kinh doanh
+## Bài toán
 
 ### Thực trạng
 
