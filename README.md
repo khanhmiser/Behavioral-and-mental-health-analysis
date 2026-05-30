@@ -380,41 +380,6 @@ Việc sử dụng điện thoại quá thường xuyên có xu hướng liên q
 
 - Sử dụng nền tảng làm cơ sở cho các mô hình dự báo sức khỏe tinh thần bằng Machine Learning.
 
-## Kỹ năng Data Analyst thể hiện trong dự án
-
-Dự án thể hiện đầy đủ các năng lực cốt lõi của một Data Analyst:
-
-### SQL
-
-- Data Modeling
-- Data Warehouse
-- OLAP Analysis
-- Query Optimization
-
-### Data Engineering
-
-- ETL Pipeline
-- Data Cleaning
-- Data Transformation
-
-### Business Intelligence
-
-- KPI Design
-- Dashboard Development
-- Reporting Automation
-
-### Analytics
-
-- Descriptive Analytics
-- Diagnostic Analytics
-- Prescriptive Analytics
-
-### Business Thinking
-
-- Chuyển đổi bài toán nghiệp vụ thành bài toán dữ liệu
-- Phân tích nguyên nhân gốc rễ
-- Đưa ra khuyến nghị dựa trên dữ liệu
-- Hỗ trợ ra quyết định cho Stakeholders
 
 ## Hướng phát triển tương lai
 
