@@ -141,6 +141,8 @@ Thu thập dữ liệu từ:
 
 và đưa vào vùng Staging.
 
+---
+
 ### Transform
 
 #### Làm sạch dữ liệu
@@ -171,8 +173,6 @@ sleep_end_time
 ```
 
 Giúp người dùng dễ dàng đọc và phân tích.
-
----
 
 #### Tổng hợp dữ liệu hành vi
 
@@ -221,18 +221,6 @@ Hệ thống được thiết kế theo mô hình sao nhằm tối ưu cho:
   <em>Hình 1. Mô hình Star Schema của hệ thống kho dữ liệu sức khỏe tinh thần.</em>
 </p>
 
-## Công nghệ sử dụng
-
-| Nhóm            | Công nghệ          |
-| --------------- | ------------------ |
-| Database        | SQL Server         |
-| ETL             | SSIS               |
-| OLAP            | SSAS               |
-| BI              | Power BI           |
-| Programming     | Python             |
-| Data Processing | pandas, Numpy      |
-| Reporting       | Power BI           |
-| Development     | Visual Studio 2022 |
 
 ## Dashboard và KPI
 
@@ -326,67 +314,71 @@ Theo dõi:
 
 ## Các phân tích thực hiện
 
-### Phân tích mô tả (Descriptive Analytics)
+### Insights & Recommendations
 
-Mô tả hiện trạng sức khỏe tinh thần của sinh viên.
+| Dashboard              | Business Question                                                                                                                                        | Main Insight                                                                                                                                                                 | Supporting Insights                                                                                                                                                                                                                                                              | Recommendation                                                                                                                                                                                                             |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Overview**        | **Nhóm sinh viên nào có nguy cơ gặp vấn đề sức khỏe tinh thần cao nhất?**                                                                                | **Nhóm sinh viên có thời lượng ngủ thấp, mức độ giao tiếp xã hội thấp, thời gian ở nhà cao và tần suất sử dụng điện thoại lớn là nhóm có nguy cơ Stress và PHQ-4 cao nhất.** | • Stress cao thường đi kèm PHQ-4 cao và SSE-3 thấp.<br>• Các chỉ số tâm lý biến động theo thời gian và chịu ảnh hưởng bởi hành vi hằng ngày.<br>• Không có một yếu tố đơn lẻ quyết định sức khỏe tinh thần mà là sự kết hợp của nhiều hành vi.                                   | • Xây dựng hệ thống Early Warning System để nhận diện nhóm rủi ro cao.<br>• Theo dõi đồng thời Sleep Duration, Stress, PHQ-4 và Social Interaction.<br>• Ưu tiên hỗ trợ nhóm có nhiều tín hiệu rủi ro xuất hiện cùng lúc.  |
+| **Sleep & Affect**  | **Giấc ngủ ảnh hưởng như thế nào đến mức độ căng thẳng?**                                                                                                | **Giấc ngủ là yếu tố có mối liên hệ mạnh nhất với Stress và trạng thái cảm xúc của sinh viên.**                                                                              | • Sinh viên ngủ ít có xu hướng ghi nhận Stress và PHQ-4 cao hơn.<br>• Thiếu ngủ thường xuất hiện trong các giai đoạn áp lực học tập cao.<br>• Nhóm ngủ đủ giấc duy trì trạng thái cảm xúc ổn định và mức tự tin tốt hơn.                                                         | • Triển khai các chương trình nâng cao nhận thức về giấc ngủ.<br>• Theo dõi các nhóm có thời lượng ngủ thấp kéo dài.<br>• Sử dụng Sleep Duration như một KPI trong hệ thống cảnh báo sớm.                                  |
+| **Device Location** | **Hoạt động thể chất có giúp cải thiện sức khỏe tinh thần hay không?**<br>**Việc sử dụng điện thoại quá nhiều có liên quan đến mức độ lo âu hay không?** | **Lối sống ít vận động, dành nhiều thời gian ở nhà và sử dụng điện thoại thường xuyên có liên hệ với các dấu hiệu sức khỏe tinh thần kém tích cực hơn.**                     | • Home Time chiếm phần lớn thời gian của nhóm Stress cao.<br>• Social Time duy trì ở mức thấp ở nhiều nhóm sinh viên.<br>• Nhóm ở nhà nhiều thường ít vận động và ít giao tiếp hơn.<br>• Unlock Count có xu hướng tăng trong các giai đoạn Stress cao.                           | • Khuyến khích tham gia hoạt động ngoài trời và vận động thể chất.<br>• Theo dõi Home Time và Unlock Count như các chỉ báo hành vi.<br>• Thực hiện các chương trình Digital Well-being nhằm giảm phụ thuộc vào điện thoại. |
+| **Audio Social**   | **Mức độ giao tiếp xã hội ảnh hưởng thế nào đến cảm xúc của sinh viên?**                                                                                 | **Mức độ giao tiếp thông qua hội thoại là một trong những chỉ báo quan trọng phản ánh sức khỏe tinh thần và mức độ kết nối xã hội của sinh viên.**                           | • Conversation Duration thấp thường đi kèm Stress và PHQ-4 cao hơn.<br>• Conversation Count phản ánh mức độ tương tác xã hội thực tế.<br>• Giao tiếp xã hội đóng vai trò như một yếu tố bảo vệ sức khỏe tinh thần.<br>• Sinh viên giao tiếp ít có nguy cơ cô lập xã hội cao hơn. | • Theo dõi các nhóm có mức độ giao tiếp giảm kéo dài.<br>• Tăng cường Peer Mentoring và Community Activities.<br>• Kết hợp Audio Metrics với Stress và Sleep để nhận diện nhóm rủi ro sớm.                                 |
 
-### Phân tích chẩn đoán (Diagnostic Analytics)
+### Project Conclusion
+| Thành phần                    | Nội dung                                                                                                                                                 |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Main Finding**              | Ngủ ít, giao tiếp xã hội thấp, thời gian ở nhà cao và sử dụng điện thoại thường xuyên là những hành vi có liên hệ mạnh nhất với nguy cơ Stress và lo âu. |
+| **High-Risk Student Segment** | Sinh viên có Sleep Duration thấp, Conversation Duration thấp, Home Time cao và Unlock Count cao là nhóm có nguy cơ cao nhất.                             |
+| **Implication**               | Các chỉ số hành vi có tiềm năng trở thành tín hiệu cảnh báo sớm cho các vấn đề sức khỏe tinh thần.                                                       |
+| **Future Direction**          | Phát triển Early Warning System và các mô hình Machine Learning để hỗ trợ dự báo nguy cơ Stress trong tương lai.                                         |
 
-Tìm hiểu nguyên nhân dẫn đến:
 
-- Stress cao
-- Lo âu
-- Mất cân bằng cảm xúc
+## Hạn chế,Nguyên nhân
+| Hạn chế                                                                           | Nguyên nhân                                                         | Hướng cải thiện                                                                                                                                         |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dữ liệu chủ yếu phản ánh thói quen của nhóm sinh viên dành nhiều thời gian ở nhà. | Đối tượng nghiên cứu có lịch học tương đối cố định và ít di chuyển. | Mở rộng dữ liệu về hoạt động ngoài trời, địa điểm học tập và mức độ vận động để phản ánh đầy đủ hơn hành vi sinh hoạt.                                  |
+| Social Time ở mức thấp nên khó phân biệt rõ các nhóm hành vi xã hội.              | Sinh viên chủ yếu tập trung cho học tập và hoạt động trong nhà.     | Thu thập thêm dữ liệu về sự kiện, câu lạc bộ và hoạt động ngoại khóa để đánh giá chính xác hơn mức độ tương tác xã hội.                                 |
+| Chưa tích hợp dữ liệu học kỳ và lịch thi.                                         | Bộ dữ liệu không cung cấp thông tin Academic Calendar.              | Bổ sung Academic Calendar gồm học kỳ, lịch thi, thời gian nghỉ lễ và deadline môn học để giải thích các giai đoạn Stress tăng cao.                      |
+| Dữ liệu âm thanh chưa được phân loại theo từng môi trường cụ thể.                 | Chỉ có thông tin mức độ âm thanh tổng quát.                         | Phân loại môi trường âm thanh như Library, Classroom, Café, Traffic hoặc Dormitory nhằm phân tích sâu hơn tác động của môi trường học tập và sinh hoạt. |
+| Chưa đánh giá được chất lượng giấc ngủ.                                           | Dữ liệu chỉ ghi nhận thời lượng và thời điểm ngủ.                   | Thu thập thêm các chỉ số như Deep Sleep, REM Sleep, Sleep Interruptions và Sleep Efficiency để đánh giá toàn diện chất lượng giấc ngủ.                  |
+| Chưa khai thác dữ liệu vận động chi tiết.                                         | Dữ liệu hiện tại chưa bao gồm đầy đủ các chỉ số hoạt động thể chất. | Bổ sung Steps, Distance, Exercise Duration và Calories Burned để đánh giá chính xác hơn mối liên hệ giữa vận động và sức khỏe tinh thần.                |
+| Chưa hỗ trợ phân tích và giám sát theo thời gian thực.                            | Dữ liệu được thu thập và xử lý theo từng giai đoạn.                 | Tích hợp dữ liệu từ Wearable Devices, Smartphone Sensors và IoT Health Data để xây dựng hệ thống giám sát và cảnh báo sớm theo thời gian thực.          |
 
-### Phân tích gợi ý (Prescriptive Analytics)
-
-Đề xuất:
-
-- Cải thiện chất lượng giấc ngủ
-- Tăng cường vận động
-- Khuyến khích giao tiếp xã hội
-
-## Insight nổi bật
-
-### Insight 1
-
-Sinh viên có thời lượng ngủ thấp thường có mức độ Stress và PHQ4 cao hơn.
-
-### Insight 2
-
-Số bước chân cao hơn thường đi kèm với trạng thái tinh thần tích cực hơn.
-
-### Insight 3
-
-Sinh viên có mức độ giao tiếp xã hội cao thường có điểm Stress thấp hơn.
-
-### Insight 4
-
-Việc sử dụng điện thoại quá thường xuyên có xu hướng liên quan đến mức độ căng thẳng cao hơn.
-
-## Đề xuất cho Stakeholders
-
-### Đối với nhà trường
-
-- Xây dựng chương trình theo dõi sức khỏe tinh thần định kỳ.
-- Tăng cường các hoạt động thể chất và ngoại khóa.
-
-### Đối với bộ phận hỗ trợ sinh viên
-
-- Thiết lập hệ thống cảnh báo sớm đối với sinh viên có nguy cơ cao.
-- Tập trung hỗ trợ các nhóm có Stress hoặc PHQ4 cao.
-
-### Đối với các nhà nghiên cứu
-
-- Sử dụng nền tảng làm cơ sở cho các mô hình dự báo sức khỏe tinh thần bằng Machine Learning.
 
 
 ## Hướng phát triển tương lai
 
-- Xây dựng mô hình Machine Learning dự đoán nguy cơ Stress.
+### 1. Xây dựng Early Warning System
+
+Phát triển hệ thống cảnh báo sớm nhằm nhận diện sinh viên có nguy cơ gặp vấn đề về sức khỏe tinh thần dựa trên các chỉ số hành vi như:
+
+- Sleep Duration
+- Conversation Duration
+- Home Time
+- Unlock Count
+- Stress
+- PHQ-4
+
+Hệ thống sẽ hỗ trợ nhà trường ưu tiên theo dõi và can thiệp sớm đối với các nhóm sinh viên có nguy cơ cao.
+
+### 2. Xây dựng mô hình Machine Learning
+
+Ứng dụng Machine Learning để:
+
+- Dự đoán nguy cơ Stress.
 - Dự báo mức độ lo âu và trầm cảm.
-- Tích hợp dữ liệu thời gian thực (Real-time Analytics).
-- Triển khai Dashboard trực tuyến cho nhà trường.
+- Phân loại nhóm sinh viên theo mức độ rủi ro sức khỏe tinh thần.
+
+### 3. Tích hợp Real-time Analytics
+
+Kết nối dữ liệu cảm biến và dữ liệu hành vi theo thời gian thực nhằm hỗ trợ giám sát liên tục và phát hiện sớm các thay đổi bất thường trong trạng thái tâm lý.
+
+### 4. Triển khai Dashboard trực tuyến
+
+Phát triển nền tảng Dashboard Web hoặc Cloud BI giúp nhà trường và các đơn vị hỗ trợ sinh viên dễ dàng theo dõi tình trạng sức khỏe tinh thần theo thời gian thực.
+
+### 5. Hỗ trợ ra quyết định dựa trên dữ liệu
+
+Mở rộng hệ thống thành nền tảng Decision Support System (DSS), giúp các nhà quản lý xây dựng chương trình hỗ trợ, can thiệp và nâng cao sức khỏe tinh thần dựa trên dữ liệu thay vì cảm tính.
 
 ---
 
