@@ -1,4 +1,4 @@
-# HỆ THỐNG KHO DỮ LIỆU VÀ PHÂN TÍCH HÀNH VI – SỨC KHỎE TINH THẦN SINH VIÊN
+# PHÂN TÍCH HÀNH VI – SỨC KHỎE TINH THẦN SINH VIÊN
 
 ## Tổng quan dự án
 
@@ -22,11 +22,9 @@ Hệ thống được phát triển theo mô hình Business Intelligence hoàn c
 - Dashboard & Reporting
 - Decision Support Analytics
 
----
+## Bài toán kinh doanh
 
-# Bài toán kinh doanh
-
-## Thực trạng
+### Thực trạng
 
 Các tổ chức giáo dục hiện nay gặp nhiều khó khăn trong việc:
 
@@ -36,23 +34,21 @@ Các tổ chức giáo dục hiện nay gặp nhiều khó khăn trong việc:
 - Khó đánh giá tác động của các hành vi hằng ngày đến trạng thái tâm lý.
 - Việc phân tích dữ liệu chủ yếu thực hiện thủ công và tốn nhiều thời gian.
 
-## Câu hỏi
+### Câu hỏi
 
 Dự án được xây dựng nhằm trả lời các câu hỏi sau:
 
-### 1. Giấc ngủ ảnh hưởng như thế nào đến mức độ căng thẳng?
+#### 1. Giấc ngủ ảnh hưởng như thế nào đến mức độ căng thẳng?
 
-### 2. Hoạt động thể chất có giúp cải thiện sức khỏe tinh thần hay không?
+#### 2. Hoạt động thể chất có giúp cải thiện sức khỏe tinh thần hay không?
 
-### 3. Mức độ giao tiếp xã hội ảnh hưởng thế nào đến cảm xúc của sinh viên?
+#### 3. Mức độ giao tiếp xã hội ảnh hưởng thế nào đến cảm xúc của sinh viên?
 
-### 4. Việc sử dụng điện thoại quá nhiều có liên quan đến mức độ lo âu hay không?
+#### 4. Việc sử dụng điện thoại quá nhiều có liên quan đến mức độ lo âu hay không?
 
-### 5. Nhóm sinh viên nào có nguy cơ gặp vấn đề về sức khỏe tinh thần cao nhất?
+#### 5. Nhóm sinh viên nào có nguy cơ gặp vấn đề về sức khỏe tinh thần cao nhất?
 
----
-
-# Giá trị dự án mang lại
+## Giá trị dự án mang lại
 
 - Hệ thống hỗ trợ:
 
@@ -65,8 +61,6 @@ Dự án được xây dựng nhằm trả lời các câu hỏi sau:
 - Hỗ trợ ra quyết định dựa trên dữ liệu thay vì cảm tính
 
 - Tạo nền tảng cho các mô hình dự báo sức khỏe tinh thần trong tương lai
-
----
 
 ## Nguồn dữ liệu
 
@@ -101,43 +95,42 @@ Nguồn: https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset
 
 - Tổng số bước đi mỗi ngày
 
----
-
-# Kiến trúc hệ thống
+## Kiến trúc hệ thống
 
 ```text
-Nguồn dữ liệu CSV
-        │
-        ▼
-      SSIS
-        │
-        ▼
- Staging Database
-        │
-        ▼
- Data Cleaning
-        │
-        ▼
- Data Transformation
-        │
-        ▼
- Data Warehouse
-        │
-        ▼
-    SSAS Cube
-        │
-        ▼
- Power BI Dashboard
-        │
-        ▼
- Decision Support
+PROJECT/
+├─ code/                                   # Code xử lý dữ liệu + script SQL
+│  ├─ stg.sql                               # Script tạo/đổ dữ liệu vào STAGING (raw → staging)
+│  ├─ dim.sql                               # Script tạo DIMENSION + mapping dim (DimUser/DimTime/…)
+│  └─ filexulydulieu.ipynb                  # Notebook xử lý dữ liệu (clean/transform/feature engineering)
+│
+├─ main data/                               # Dữ liệu đầu vào + tài liệu giải thích dữ liệu
+│  ├─ Demographics/                         # Nhóm dữ liệu nhân khẩu học (UID, gender, ...)
+│  ├─ EMA/                                  # Nhóm khảo sát tâm lý (PHQ4, Stress, Social, SSE3, ...)
+│  ├─ Sensing/                              # Nhóm dữ liệu cảm biến (sleep, audio, unlock, location, ...)
+│  ├─ giải thích data.pdf                   # Tài liệu mô tả dataset / định nghĩa biến (PDF)
+│  └─ giải thích.docx                       # Tài liệu mô tả dataset / ghi chú làm dữ liệu (Word)
+│
+├─ reports/                                 # Dashboard + báo cáo cuối
+│  ├─ FINAL_WAREHOUSE_REPORT.pbix            # Power BI Dashboard/Report (KPI + các trang phân tích)
+│  └─ Phân tích hành vi và sức khỏe tinh thần.docx  # Báo cáo phân tích + insight + đề xuất
+│
+├─ SSAS_mentalhealth/                       # Project SSAS (OLAP Cube)
+│  ├─ .vs/                                  # File cache cấu hình VS (khuyến nghị đưa vào .gitignore)
+│  ├─ mentalhealth/                         # Source project SSAS (cube, dimensions, measures)
+│  └─ mentalhealth.sln                      # Solution SSAS để mở trong Visual Studio
+│
+├─ SSIS/                                    # Project SSIS (ETL Pipeline)
+│  ├─ .vs/                                  # File cache cấu hình VS (khuyến nghị đưa vào .gitignore)
+│  ├─ DATA FLOW/                            # Nơi chứa package/flow ETL (Extract → Transform → Load)
+│  └─ DATA FLOW.sln                         # Solution SSIS để mở trong Visual Studio
+│
+└─ README.md                                # Tổng quan dự án + kiến trúc + quy trình ETL + star schema + KPI/insight
 ```
 
----
+## Quy trình ETL
 
-# Quy trình ETL
-
-## Extract
+### Extract
 
 Thu thập dữ liệu từ:
 
@@ -148,18 +141,16 @@ Thu thập dữ liệu từ:
 
 và đưa vào vùng Staging.
 
----
+### Transform
 
-## Transform
-
-### Làm sạch dữ liệu
+#### Làm sạch dữ liệu
 
 - Loại bỏ dữ liệu trùng lặp
 - Xử lý dữ liệu thiếu
 - Chuẩn hóa định dạng dữ liệu
 - Đồng bộ mã người dùng (UID)
 
-### Feature Engineering
+#### Feature Engineering
 
 Bổ sung các thuộc tính phục vụ phân tích:
 
@@ -183,7 +174,7 @@ Giúp người dùng dễ dàng đọc và phân tích.
 
 ---
 
-### Tổng hợp dữ liệu hành vi
+#### Tổng hợp dữ liệu hành vi
 
 Tính giá trị trung bình theo các khung giờ:
 
@@ -202,7 +193,7 @@ Ví dụ:
 
 ---
 
-## Load
+### Load
 
 Dữ liệu sau xử lý được nạp vào:
 
@@ -211,11 +202,9 @@ Dữ liệu sau xử lý được nạp vào:
 
 trong hệ thống kho dữ liệu.
 
----
+## Thiết kế kho dữ liệu
 
-# Thiết kế kho dữ liệu
-
-## Mô hình Star Schema
+### Mô hình Star Schema
 
 Hệ thống được thiết kế theo mô hình sao nhằm tối ưu cho:
 
@@ -224,89 +213,15 @@ Hệ thống được thiết kế theo mô hình sao nhằm tối ưu cho:
 - Dashboard
 - Báo cáo quản trị
 
----
+<p align="center">
+  <img width="768" alt="Star Schema" src="https://github.com/user-attachments/assets/e7e56ccc-53d7-4e23-a337-552be54bd6f6">
+</p>
 
-## Fact Table
+<p align="center">
+  <em>Hình 1. Mô hình Star Schema của hệ thống kho dữ liệu sức khỏe tinh thần.</em>
+</p>
 
-### FactBehavior
-
-Lưu trữ các chỉ số phân tích chính:
-
-| Chỉ số            |
-| ----------------- |
-| Tổng điểm PHQ4    |
-| Tổng điểm SSE3    |
-| Tổng số bước chân |
-| Mức độ căng thẳng |
-
----
-
-## Dimension Tables
-
-### DimUser
-
-Thông tin người dùng
-
-- UID
-- Giới tính
-
----
-
-### DimTime
-
-Thông tin thời gian
-
-- Ngày
-- Tháng
-- Năm
-
----
-
-### DimMental
-
-Thông tin sức khỏe tinh thần
-
-- PHQ4
-- Stress
-- Social Level
-- SSE3
-
----
-
-### DimSleepMotion
-
-Thông tin giấc ngủ và vận động
-
-- Thời lượng ngủ
-- Thời gian bắt đầu ngủ
-- Thời gian thức dậy
-- Mức độ vận động
-
----
-
-### DimAudio
-
-Thông tin âm thanh và giao tiếp
-
-- Tần suất hội thoại
-- Thời lượng hội thoại
-- Cường độ âm thanh
-
----
-
-### DimLocationUnlock
-
-Thông tin sử dụng điện thoại và vị trí
-
-- Số lần mở khóa
-- Thời lượng sử dụng
-- Thời gian ở nhà
-- Thời gian học tập
-- Thời gian tập luyện
-
----
-
-# Công nghệ sử dụng
+## Công nghệ sử dụng
 
 | Nhóm            | Công nghệ          |
 | --------------- | ------------------ |
@@ -315,26 +230,38 @@ Thông tin sử dụng điện thoại và vị trí
 | OLAP            | SSAS               |
 | BI              | Power BI           |
 | Programming     | Python             |
-| Data Processing | Pandas             |
+| Data Processing | pandas, Numpy      |
 | Reporting       | Power BI           |
 | Development     | Visual Studio 2022 |
 
----
+## Dashboard và KPI
 
-# Dashboard và KPI
+### Dashboard Tổng quan
 
-## Dashboard Tổng quan
+<p align="center">
+  <img width="1410" height="792" alt="image" src="https://github.com/user-attachments/assets/95c033cc-9f7c-4ed4-b78f-c3bd0b1a9bed" />
+</p>
 
-### KPI chính
+<p align="center">
+  <em>Hình 2. Dashboard Tổng quan </em>
+</p>
+
+#### KPI chính
 
 - Mức độ Stress trung bình
 - Điểm PHQ4 trung bình
 - Điểm SSE3 trung bình
 - Tổng số bước chân trung bình
 
----
+### Dashboard Giấc ngủ và Cảm xúc
 
-## Dashboard Giấc ngủ và Cảm xúc
+<p align="center">
+  <img width="1419" height="795" alt="image" src="https://github.com/user-attachments/assets/97d4fdc8-70a0-4feb-980f-9b7f76d8f0f9" />
+</p>
+
+<p align="center">
+  <em>Hình 3.Dashboard Giấc ngủ và Cảm xúc </em>
+</p>
 
 Theo dõi:
 
@@ -342,9 +269,16 @@ Theo dõi:
 - Giờ ngủ trung bình
 - Mối quan hệ giữa giấc ngủ và Stress
 
----
+### Dashboard Hoạt động thể chất
 
-## Dashboard Hoạt động thể chất
+<p align="center">
+  <img width="1407" height="787" alt="image" src="https://github.com/user-attachments/assets/e68c863e-5179-45a6-bcba-b968eb1d96d6" />
+</p>
+
+<p align="center">
+  <em>Hình 4.Dashboard Hoạt động thể chất </em>
+</p>
+
 
 Theo dõi:
 
@@ -352,37 +286,51 @@ Theo dõi:
 - Mức độ vận động
 - Tác động đến sức khỏe tinh thần
 
----
+### Dashboard Tương tác xã hội và Hành vi sử dụng điện thoại
+<p align="center">
+  <img width="1410" height="784" alt="image" src="https://github.com/user-attachments/assets/03d734cc-3442-450f-b384-68e5bfc83259" />
+</p>
 
-## Dashboard Tương tác xã hội
+<p align="center">
+  <em>Hình 5.DashboardTương tác xã hội và Hành vi sử dụng điện thoại </em>
+</p>
 
 Theo dõi:
 
 - Tần suất hội thoại
 - Thời lượng giao tiếp
 - Social Level
-
----
-
-## Dashboard Hành vi sử dụng điện thoại
-
-Theo dõi:
-
 - Số lần mở khóa
 - Thời lượng sử dụng điện thoại
 - Tác động đến Stress và PHQ4
 
----
 
-# Các phân tích thực hiện
+### Dashboard hành vi giao tiếp âm thanh  
 
-## Phân tích mô tả (Descriptive Analytics)
+<p align="center">
+ <img width="1411" height="783" alt="image" src="https://github.com/user-attachments/assets/c4248c6d-6ed2-43bc-8633-33daacfca35e" />
+</p>
+
+<p align="center">
+  <em>Hình 6.Dashboard Hành vi giao tiếp âm thanh  
+ </em>
+</p>
+
+
+
+Theo dõi:
+- Tổng số phút trò chuyện trung bình
+- Tần suất hoặc số lượng cuộc hội thoại diễn ra trong một giờ
+- Biên độ âm thanh
+
+
+## Các phân tích thực hiện
+
+### Phân tích mô tả (Descriptive Analytics)
 
 Mô tả hiện trạng sức khỏe tinh thần của sinh viên.
 
----
-
-## Phân tích chẩn đoán (Diagnostic Analytics)
+### Phân tích chẩn đoán (Diagnostic Analytics)
 
 Tìm hiểu nguyên nhân dẫn đến:
 
@@ -390,9 +338,7 @@ Tìm hiểu nguyên nhân dẫn đến:
 - Lo âu
 - Mất cân bằng cảm xúc
 
----
-
-## Phân tích gợi ý (Prescriptive Analytics)
+### Phân tích gợi ý (Prescriptive Analytics)
 
 Đề xuất:
 
@@ -400,9 +346,7 @@ Tìm hiểu nguyên nhân dẫn đến:
 - Tăng cường vận động
 - Khuyến khích giao tiếp xã hội
 
----
-
-# Insight nổi bật
+## Insight nổi bật
 
 ### Insight 1
 
@@ -420,9 +364,7 @@ Sinh viên có mức độ giao tiếp xã hội cao thường có điểm Stres
 
 Việc sử dụng điện thoại quá thường xuyên có xu hướng liên quan đến mức độ căng thẳng cao hơn.
 
----
-
-# Đề xuất cho Stakeholders
+## Đề xuất cho Stakeholders
 
 ### Đối với nhà trường
 
@@ -438,9 +380,7 @@ Việc sử dụng điện thoại quá thường xuyên có xu hướng liên q
 
 - Sử dụng nền tảng làm cơ sở cho các mô hình dự báo sức khỏe tinh thần bằng Machine Learning.
 
----
-
-# Kỹ năng Data Analyst thể hiện trong dự án
+## Kỹ năng Data Analyst thể hiện trong dự án
 
 Dự án thể hiện đầy đủ các năng lực cốt lõi của một Data Analyst:
 
@@ -476,9 +416,7 @@ Dự án thể hiện đầy đủ các năng lực cốt lõi của một Data 
 - Đưa ra khuyến nghị dựa trên dữ liệu
 - Hỗ trợ ra quyết định cho Stakeholders
 
----
-
-# Hướng phát triển tương lai
+## Hướng phát triển tương lai
 
 - Xây dựng mô hình Machine Learning dự đoán nguy cơ Stress.
 - Dự báo mức độ lo âu và trầm cảm.
