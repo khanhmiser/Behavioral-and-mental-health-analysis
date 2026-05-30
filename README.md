@@ -1,6 +1,6 @@
-# 🧠 HỆ THỐNG KHO DỮ LIỆU VÀ PHÂN TÍCH HÀNH VI – SỨC KHỎE TINH THẦN SINH VIÊN
+# HỆ THỐNG KHO DỮ LIỆU VÀ PHÂN TÍCH HÀNH VI – SỨC KHỎE TINH THẦN SINH VIÊN
 
-## 📌 Tổng quan dự án
+## Tổng quan dự án
 
 Trong những năm gần đây, sức khỏe tinh thần đang trở thành một trong những vấn đề được quan tâm hàng đầu tại các trường đại học trên thế giới. Tuy nhiên, phần lớn các tổ chức giáo dục vẫn chưa có hệ thống dữ liệu tập trung để theo dõi, phân tích và hỗ trợ đưa ra quyết định liên quan đến sức khỏe tâm lý của sinh viên.
 
@@ -24,7 +24,7 @@ Hệ thống được phát triển theo mô hình Business Intelligence hoàn c
 
 ---
 
-# 🎯 Bài toán kinh doanh
+# Bài toán kinh doanh
 
 ## Thực trạng
 
@@ -36,7 +36,7 @@ Các tổ chức giáo dục hiện nay gặp nhiều khó khăn trong việc:
 - Khó đánh giá tác động của các hành vi hằng ngày đến trạng thái tâm lý.
 - Việc phân tích dữ liệu chủ yếu thực hiện thủ công và tốn nhiều thời gian.
 
-## Câu hỏi kinh doanh
+## Câu hỏi
 
 Dự án được xây dựng nhằm trả lời các câu hỏi sau:
 
@@ -52,38 +52,29 @@ Dự án được xây dựng nhằm trả lời các câu hỏi sau:
 
 ---
 
-# 💼 Giá trị kinh doanh mang lại
+# Giá trị dự án mang lại
 
-Hệ thống hỗ trợ:
+- Hệ thống hỗ trợ:
 
-✅ Phát hiện sớm sinh viên có nguy cơ gặp vấn đề tâm lý
+- Phát hiện sớm sinh viên có nguy cơ gặp vấn đề tâm lý
 
-✅ Theo dõi xu hướng sức khỏe tinh thần theo thời gian
+- Theo dõi xu hướng sức khỏe tinh thần theo thời gian
 
-✅ Hỗ trợ nhà trường đưa ra các chương trình can thiệp phù hợp
+- Hỗ trợ nhà trường đưa ra các chương trình can thiệp phù hợp
 
-✅ Hỗ trợ ra quyết định dựa trên dữ liệu thay vì cảm tính
+- Hỗ trợ ra quyết định dựa trên dữ liệu thay vì cảm tính
 
-✅ Tạo nền tảng cho các mô hình dự báo sức khỏe tinh thần trong tương lai
+- Tạo nền tảng cho các mô hình dự báo sức khỏe tinh thần trong tương lai
 
 ---
 
-# 📊 Nguồn dữ liệu
+## Nguồn dữ liệu
 
-## Dataset
+Dự án sử dụng bộ dữ liệu **College Experience Study Dataset** được công bố trên Kaggle, thu thập dữ liệu hành vi và sức khỏe tinh thần của sinh viên trong giai đoạn 2017–2022.
 
-Bộ dữ liệu được sử dụng từ nghiên cứu:
+Bộ dữ liệu được phát triển bởi nhóm nghiên cứu của **Dartmouth College** dưới sự dẫn dắt của **Andrew T. Campbell**, bao gồm dữ liệu về giấc ngủ, hoạt động thể chất, sử dụng điện thoại, tương tác xã hội và các khảo sát đánh giá sức khỏe tinh thần.
 
-**Five-Year Mobile Sensing Study**
-
-Thực hiện bởi:
-
-- Dartmouth College
-- Andrew T. Campbell Research Team
-
-## Loại dữ liệu
-
-Dữ liệu đa nguồn (Multi-Modal Dataset) kéo dài trong 5 năm, bao gồm:
+Nguồn: https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset
 
 ### 1. Thông tin cá nhân (Demographics)
 
@@ -112,7 +103,7 @@ Dữ liệu đa nguồn (Multi-Modal Dataset) kéo dài trong 5 năm, bao gồm:
 
 ---
 
-# 🏗️ Kiến trúc hệ thống
+# Kiến trúc hệ thống
 
 ```text
 Nguồn dữ liệu CSV
@@ -144,7 +135,7 @@ Nguồn dữ liệu CSV
 
 ---
 
-# 🔄 Quy trình ETL
+# Quy trình ETL
 
 ## Extract
 
@@ -222,7 +213,7 @@ trong hệ thống kho dữ liệu.
 
 ---
 
-# ⭐ Thiết kế kho dữ liệu
+# Thiết kế kho dữ liệu
 
 ## Mô hình Star Schema
 
@@ -315,7 +306,7 @@ Thông tin sử dụng điện thoại và vị trí
 
 ---
 
-# ⚙️ Công nghệ sử dụng
+# Công nghệ sử dụng
 
 | Nhóm            | Công nghệ          |
 | --------------- | ------------------ |
@@ -330,7 +321,7 @@ Thông tin sử dụng điện thoại và vị trí
 
 ---
 
-# 📈 Dashboard và KPI
+# Dashboard và KPI
 
 ## Dashboard Tổng quan
 
@@ -383,7 +374,7 @@ Theo dõi:
 
 ---
 
-# 🔍 Các phân tích thực hiện
+# Các phân tích thực hiện
 
 ## Phân tích mô tả (Descriptive Analytics)
 
@@ -411,7 +402,7 @@ Tìm hiểu nguyên nhân dẫn đến:
 
 ---
 
-# 📌 Insight nổi bật
+# Insight nổi bật
 
 ### Insight 1
 
@@ -431,7 +422,7 @@ Việc sử dụng điện thoại quá thường xuyên có xu hướng liên q
 
 ---
 
-# 🚀 Đề xuất cho Stakeholders
+# Đề xuất cho Stakeholders
 
 ### Đối với nhà trường
 
@@ -449,7 +440,7 @@ Việc sử dụng điện thoại quá thường xuyên có xu hướng liên q
 
 ---
 
-# 📚 Kỹ năng Data Analyst thể hiện trong dự án
+# Kỹ năng Data Analyst thể hiện trong dự án
 
 Dự án thể hiện đầy đủ các năng lực cốt lõi của một Data Analyst:
 
@@ -487,7 +478,7 @@ Dự án thể hiện đầy đủ các năng lực cốt lõi của một Data 
 
 ---
 
-# 🔮 Hướng phát triển tương lai
+# Hướng phát triển tương lai
 
 - Xây dựng mô hình Machine Learning dự đoán nguy cơ Stress.
 - Dự báo mức độ lo âu và trầm cảm.
@@ -496,18 +487,4 @@ Dự án thể hiện đầy đủ các năng lực cốt lõi của một Data 
 
 ---
 
-# 👨‍💻 Tác giả
 
-**Hoàng Quốc Khánh**
-
-Data Analyst | Business Intelligence | SQL | Power BI | Python | Data Warehouse
-
-📧 Email: Your Email
-
-🔗 LinkedIn: Your LinkedIn
-
-🔗 GitHub: Your GitHub
-
----
-
-> Đây là dự án End-to-End Business Intelligence thể hiện toàn bộ quy trình từ Data Engineering → Data Warehouse → OLAP → Dashboard → Business Insight, mô phỏng sát quy trình làm việc thực tế của một Data Analyst trong doanh nghiệp hoặc tập đoàn đa quốc gia.
