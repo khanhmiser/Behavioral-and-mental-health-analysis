@@ -4,16 +4,6 @@
 
 Trong những năm gần đây, sức khỏe tinh thần đang trở thành một trong những vấn đề được quan tâm hàng đầu tại các trường đại học trên thế giới. Tuy nhiên, phần lớn các tổ chức giáo dục vẫn chưa có hệ thống dữ liệu tập trung để theo dõi, phân tích và hỗ trợ đưa ra quyết định liên quan đến sức khỏe tâm lý của sinh viên.
 
-Dự án này xây dựng một hệ thống **Data Warehouse & Business Intelligence** nhằm thu thập, xử lý, lưu trữ và phân tích dữ liệu hành vi của sinh viên để hỗ trợ đánh giá tình trạng sức khỏe tinh thần dựa trên các yếu tố như:
-
-- Giấc ngủ
-- Hoạt động thể chất
-- Mức độ căng thẳng
-- Mức độ tự tin
-- Tương tác xã hội
-- Hành vi sử dụng điện thoại
-- Môi trường âm thanh xung quanh
-
 ## Bài toán
 
 ### Thực trạng
@@ -40,19 +30,6 @@ Dự án được xây dựng nhằm trả lời các câu hỏi sau:
 
 #### 5. Nhóm sinh viên nào có nguy cơ gặp vấn đề về sức khỏe tinh thần cao nhất?
 
-## Giá trị dự án mang lại
-
-- Hệ thống hỗ trợ:
-
-- Phát hiện sớm sinh viên có nguy cơ gặp vấn đề tâm lý
-
-- Theo dõi xu hướng sức khỏe tinh thần theo thời gian
-
-- Hỗ trợ nhà trường đưa ra các chương trình can thiệp phù hợp
-
-- Hỗ trợ ra quyết định dựa trên dữ liệu thay vì cảm tính
-
-- Tạo nền tảng cho các mô hình dự báo sức khỏe tinh thần trong tương lai
 
 ## Nguồn dữ liệu
 
