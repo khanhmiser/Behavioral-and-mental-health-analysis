@@ -98,82 +98,20 @@ PROJECT/
 ```
 
 ## Quy trình ETL
+<p align="center">
+  <img width="350" height="636" alt="image" src="https://github.com/user-attachments/assets/54db9782-79ad-4d39-a418-b87f784fee6a" />
+</p>
 
-### Extract
+<p align="center">
+  <em> Hình 1. Sơ đồ quy trình ETL tổng quát </em>
+</p>
 
-Thu thập dữ liệu từ:
+- Extract: lấy dữ liệu từ nguồn → đưa vào vùng STG.
+- Transform: làm sạch, đổi kiểu, tính toán, ánh xạ → nạp vào các bảng Dim.
+- Load: Lookup khóa ngoại → nạp dữ liệu vào FactBehavior.
 
-- demographics.csv
-- general_ema.csv
-- sensing.csv
-- steps.csv
 
-và đưa vào vùng Staging.
-
----
-
-### Transform
-
-#### Làm sạch dữ liệu
-
-- Loại bỏ dữ liệu trùng lặp
-- Xử lý dữ liệu thiếu
-- Chuẩn hóa định dạng dữ liệu
-- Đồng bộ mã người dùng (UID)
-
-#### Feature Engineering
-
-Bổ sung các thuộc tính phục vụ phân tích:
-
-#### Chuyển đổi thời gian ngủ
-
-Từ:
-
-```text
-sleep_start
-sleep_end
-```
-
-Thành:
-
-```text
-sleep_start_time
-sleep_end_time
-```
-
-Giúp người dùng dễ dàng đọc và phân tích.
-
-#### Tổng hợp dữ liệu hành vi
-
-Tính giá trị trung bình theo các khung giờ:
-
-```text
-0h - 9h
-9h - 18h
-18h - 24h
-```
-
-Ví dụ:
-
-- act_on_foot_ep_avg
-- loc_dist_ep_avg
-- unlock_duration_ep_avg
-- audio_convo_duration_ep_avg
-
----
-
-### Load
-
-Dữ liệu sau xử lý được nạp vào:
-
-- Các bảng Dimension
-- Bảng FactBehavior
-
-trong hệ thống kho dữ liệu.
-
-## Thiết kế kho dữ liệu
-
-### Mô hình Star Schema
+## Thiết kế kho dữ liệu theo mô hình Star Schema
 
 Hệ thống được thiết kế theo mô hình sao nhằm tối ưu cho:
 
@@ -187,7 +125,7 @@ Hệ thống được thiết kế theo mô hình sao nhằm tối ưu cho:
 </p>
 
 <p align="center">
-  <em>Hình 1. Mô hình Star Schema của hệ thống kho dữ liệu sức khỏe tinh thần.</em>
+  <em>Hình 2. Mô hình Star Schema của hệ thống kho dữ liệu sức khỏe tinh thần.</em>
 </p>
 
 
@@ -200,7 +138,7 @@ Hệ thống được thiết kế theo mô hình sao nhằm tối ưu cho:
 </p>
 
 <p align="center">
-  <em>Hình 2. Dashboard Tổng quan </em>
+  <em>Hình 3. Dashboard Tổng quan </em>
 </p>
 
 #### KPI chính
@@ -217,7 +155,7 @@ Hệ thống được thiết kế theo mô hình sao nhằm tối ưu cho:
 </p>
 
 <p align="center">
-  <em>Hình 3.Dashboard Giấc ngủ và Cảm xúc </em>
+  <em>Hình 4. Dashboard Giấc ngủ và Cảm xúc </em>
 </p>
 
 Theo dõi:
@@ -233,7 +171,7 @@ Theo dõi:
 </p>
 
 <p align="center">
-  <em>Hình 4.Dashboard Hoạt động thể chất </em>
+  <em>Hình 5. Dashboard Hoạt động thể chất </em>
 </p>
 
 
@@ -249,7 +187,7 @@ Theo dõi:
 </p>
 
 <p align="center">
-  <em>Hình 5.DashboardTương tác xã hội và Hành vi sử dụng điện thoại </em>
+  <em>Hình 6. DashboardTương tác xã hội và Hành vi sử dụng điện thoại </em>
 </p>
 
 Theo dõi:
@@ -269,7 +207,7 @@ Theo dõi:
 </p>
 
 <p align="center">
-  <em>Hình 6.Dashboard Hành vi giao tiếp âm thanh  
+  <em>Hình 7. Dashboard Hành vi giao tiếp âm thanh  
  </em>
 </p>
 
